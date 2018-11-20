@@ -1,106 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NFC Signal Types</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/89120d60950254c89225aa3c8cfb418fb104c6d2/style.css" rel="stylesheet"><!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- Materialize -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css"><!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>NFC Signal Types</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/89120d60950254c89225aa3c8cfb418fb104c6d2/style.css" rel="stylesheet"><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- Materialize -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css"><!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <!-- Fixed Navbar -->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper indigo darken-2">
-        <a class="brand-logo center roboto" id="upperlogo">Signal Types</a>
-        <ul class="right hide-on-med-and-down roboto" id="nav-mobile">
-          <li>
-            <a class="smoothScroll" href="https://sncnfc2018.github.io" id="navbarlinks">Home</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="history.html" id="navbarlinks">History</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="usecases.html" id="navbarlinks">Uses</a>
-          </li>
-        </ul>
-        <ul class="side-nav" id="slide-out">
-          <li>
-            <a class="smoothScroll" href="https://sncnfc2018.github.io">Home</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="history.html">History</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="usecases.html">Uses</a>
-          </li>
-        </ul><a class="button-collapse" data-activates="slide-out" href="#"><i class="mdi-navigation-menu"></i></a>
-      </div>
-    </nav>
-  </div>
-  <div class="container">
-    <!-- Page Content goes here -->
-    <div class="row">
-      <div class="col l8 m12 s12 offset-l2">
-        <div class="card" id="maincard">
-          <div class="card-image">
-            <img src="https://epxx.co/artigos/img_nfc/nfc_layout.001.png"> <span class="card-title"></span>
-          </div>
-          <div class="card-content">
-            <p>There are three major classifications of NFC communication, NFC-A, NFC-B and NFC-F. Each present their own unique advantages and disadvantages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col s12 m4 l4">
-        <div class="card-panel indigo darken-2">
-          <span class="white-text">NFC Type A is slower than type F but is much cheaper, thus is very popular in common tags sold on Amazon or other online marketplaces. This type utilizes Miller encoding, which is the modulation of a signal from 0% to 100%.</span>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card-panel indigo darken-2">
-          <span class="white-text">NFC Type B is the same speed as type A, thus is again slower than type F, while also being cheaper. The difference between the two is that type B utilizes Manchester encoding, which is the modulation by increments of 10%.</span>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card-panel indigo darken-2">
-          <span class="white-text">NFC type F is the only proprietary signaling technology of the three listed, being used solely by the Sony Corporation. This is by far the most expensive tag classification, yet is also the fastest of all three signaling technologies covered.</span>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col s6">
-        <div class="card" id="maincard">
-          <div class="card-image">
-            <img src="http://www.rfwireless-world.com/images/100-ASK-modulation.jpg"><span class="card-title black-text">Miller Encoding</span>
-          </div>
-          <div class="card-content">
-            <p>Encoding is the technical process in which data is transformed into machine language and transferred from one NFC tag to another, and can be thought of as the lowest level at which NFC truly communicates and functions as we know it today. Miller encoding is the first of the two primary encoding styles used in all three of the major signaling types. There are three rules when discussing Miller encoding: If bit is 0, do not invert the signal, if bit is 0 but previous bit was also 0, invert the signal at the edge of the bit, and ff bit is 1, invert the signal at the middle of the bit (this is the delayed transition).</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s6">
-        <div class="card" id="maincard">
-          <div class="card-image">
-            <img src="http://www.rfwireless-world.com/images/10-ASK-modulation.jpg"><span class="card-title black-text">Manchester Encoding</span>
-          </div>
-          <div class="card-content">
-            <p>Compared to miller encoding, this style of encoding is much easier to understand. If the modulated signal is at the lower point, this being 10% lower than a higher value, than it is 0. If it is at the higher value, it is considered to be a 1.</p>
-          </div>
-        </div>
-      </div>
-      <div></div><!-- Scripts -->
-      <script src="//code.jquery.com/jquery-2.2.1.min.js">
-      </script> 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js">
-      </script> 
-      <script src="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/77bf246399356de08202338101915e2a25f89002/index.js">
-      </script>
-    </div>
-  </div>
+	<!-- Fixed Navbar -->
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper indigo darken-2">
+				<a class="brand-logo center roboto" id="upperlogo">Signal Types</a>
+				<ul class="right hide-on-med-and-down roboto" id="nav-mobile">
+					<li>
+						<a class="smoothScroll" href="https://sncnfc2018.github.io" id="navbarlinks">Home</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="history.html" id="navbarlinks">History</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="usecases.html" id="navbarlinks">Uses</a>
+					</li>
+				</ul>
+				<ul class="side-nav" id="slide-out">
+					<li>
+						<a class="smoothScroll" href="https://sncnfc2018.github.io">Home</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="history.html">History</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="usecases.html">Uses</a>
+					</li>
+				</ul><a class="button-collapse" data-activates="slide-out" href="#"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+	</div>
+	<div class="container">
+		<!-- Page Content goes here -->
+		<div class="row">
+			<div class="col l8 m12 s12 offset-l2">
+				<div class="card" id="maincard">
+					<div class="card-image">
+						<img src="https://epxx.co/artigos/img_nfc/nfc_layout.001.png"> <span class="card-title"></span>
+					</div>
+					<div class="card-content">
+						<p>There are three major classifications of NFC communication, NFC-A, NFC-B and NFC-F. Each present their own unique advantages and disadvantages.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col s12 m4 l4">
+				<div class="card-panel indigo darken-2">
+					<span class="white-text">NFC Type A is slower than type F but is much cheaper, thus is very popular in common tags sold on Amazon or other online marketplaces. This type utilizes Miller encoding, which is the modulation of a signal from 0% to 100%.</span>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card-panel indigo darken-2">
+					<span class="white-text">NFC Type B is the same speed as type A, thus is again slower than type F, while also being cheaper. The difference between the two is that type B utilizes Manchester encoding, which is the modulation by increments of 10%.</span>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card-panel indigo darken-2">
+					<span class="white-text">NFC type F is the only proprietary signaling technology of the three listed, being used solely by the Sony Corporation. This is by far the most expensive tag classification, yet is also the fastest of all three signaling technologies covered.</span>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col s6">
+				<div class="card" id="maincard">
+					<div class="card-image">
+						<img src="http://www.rfwireless-world.com/images/100-ASK-modulation.jpg"><span class="card-title black-text">Miller Encoding</span>
+					</div>
+					<div class="card-content">
+						<p>Encoding is the technical process in which data is transformed into machine language and transferred from one NFC tag to another, and can be thought of as the lowest level at which NFC truly communicates. Miller encoding is the first of the two primary encoding styles used in all three of the major signaling types. There are three rules when discussing Miller encoding: If bit is 0, do not invert the signal, if bit is 0 but previous bit was also 0, invert the signal at the edge of the bit, and ff bit is 1, invert the signal at the middle of the bit (this is the delayed transition).</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s6">
+				<div class="card" id="maincard">
+					<div class="card-image">
+						<img src="http://www.rfwireless-world.com/images/10-ASK-modulation.jpg"><span class="card-title black-text">Manchester Encoding</span>
+					</div>
+					<div class="card-content">
+						<p>Compared to miller encoding, this style of encoding is much easier to understand. If the modulated signal is at the lower point, this being 10% lower than a higher value, than it is 0. If it is at the higher value, it is considered to be a 1.</p>
+					</div>
+				</div>
+			</div>
+			<div></div><!-- Scripts -->
+			<script src="//code.jquery.com/jquery-2.2.1.min.js">
+			</script> 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js">
+			</script> 
+			<script src="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/77bf246399356de08202338101915e2a25f89002/index.js">
+			</script>
+		</div>
+	</div>
 </body>
 </html>
