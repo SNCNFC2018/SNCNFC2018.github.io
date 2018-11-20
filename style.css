@@ -8,6 +8,11 @@
 .accent_color {
   background-color: #ffeb3b !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 #upperlogo {
   text-decoration: none;
 }
