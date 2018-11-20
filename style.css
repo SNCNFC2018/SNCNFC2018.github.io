@@ -1,0 +1,41 @@
+/*-- indigo darken-2 --*/
+
+.default_color {
+  background-color: #303f9f !important;
+}
+/*-- yellow --*/
+
+.accent_color {
+  background-color: #ffeb3b !important;
+}
+#upperlogo {
+  text-decoration: none;
+}
+/*-- Navbar Links --*/
+
+#navbarlinks {
+  text-decoration: none;
+  color: white;
+}
+#maincard {
+  margin-top: 25px;
+}
+/*-- About Section --*/
+
+.about {
+  text-align: left;
+}
+.about .col {
+  margin-bottom: 45px;
+}
+.about h5 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+hr {
+  width: 40px;
+  margin-bottom: 45px;
+}
+.about .card {
+}
