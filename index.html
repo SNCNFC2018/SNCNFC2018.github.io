@@ -1,145 +1,140 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>NFC Showcase</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link href="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/89120d60950254c89225aa3c8cfb418fb104c6d2/style.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Materialize -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css">
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>NFC Showcase</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/89120d60950254c89225aa3c8cfb418fb104c6d2/style.css" rel="stylesheet"><!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- Materialize -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css"><!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Fixed Navbar -->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper indigo darken-2">
-        <a class="brand-logo center roboto" id="upperlogo">NFC</a>
-        <ul class="right hide-on-med-and-down roboto" id="nav-mobile">
-          <li>
-            <a class="smoothScroll" href="signaltypes.html" id="navbarlinks">Signals</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="history.html" id="navbarlinks">History</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="usecases.html" id="navbarlinks">Uses</a>
-          </li>
-        </ul>
-        <ul class="side-nav" id="slide-out">
-          <li>
-            <a class="smoothScroll" href="signaltypes.html">Signals</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="history.html">History</a>
-          </li>
-          <li>
-            <a class="smoothScroll" href="usecases.html">Uses</a>
-          </li>
-        </ul><a class="button-collapse" data-activates="slide-out" href="#"><i class="mdi-navigation-menu"></i></a>
-      </div>
-    </nav>
-  </div>
-  <div class="container">
-    <!-- Page Content goes here -->
-    <div class="row">
-      <div class="col l8 m12 s12 offset-l2">
-        <div class="card" id="maincard">
-          <div class="card-image">
-            <img src="https://i.ytimg.com/vi/kc2MM8z6X7k/maxresdefault.jpg"> <span class="card-title"></span>
-          </div>
-          <div class="card-content">
-            <p>NFC, or near-field communication, enables short range communication between compatible devices. This requires at least one transmitting device, and another to receive the signal. A range of devices can use the NFC standard, with the most common
-              applications being in smartphones and payment systems.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container about" id="intro">
-    <hr>
-    <div class="row">
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">How it Works</span>
-            <p>Using magnetic induction, a reader emits a small electric current which creates a magnetic field that in turn bridges the physical space between two devices. That field is received by a similar coil in the client device where it is turned
-              back into electrical impulses to communicate data such as a credit card number or other such data.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">Passive vs. Active</span>
-            <p>‘Passive’ NFC tags use the energy from the reader to encode their response, while ‘active’ tags have their own power source and respond to the reader using their own electromagnetic fields. You will find 'passive' style NFC in devices such
-              as bluetooth speakers, with 'active' style NFC being found in devices such as smart phones.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">Security</span>
-            <p>When it comes to more sensitive data such as credit card numbers or passwords, some form encryption whether open-source or proprietary is to be expected on any NFC enabled payment system. Even then, an individual attempting to steal such credentials
-              would need to be in very close proximity to do so.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-  </div>
-  <div class="container" id="types">
-    <div class="row">
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">Signaling Types</span>
-            <p>There are three major classifications of NFC communication, NFC-A, NFC-B and NFC-F.</p>
-          </div>
-          <div class="card-action">
-            <a href="signaltypes.html">Learn more about signaling types.</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">History</span>
-            <p>NFC can be viewed as the successor to RFID, a technology patented in 1983.</p>
-          </div>
-          <div class="card-action">
-            <a href="history.html">Learn more about NFC history.</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4 l4">
-        <div class="card indigo darken-2">
-          <div class="card-content white-text">
-            <span class="card-title">Use Cases</span>
-            <p>NFC technology is used in everything from Bluetooth speakers to automobiles.</p>
-          </div>
-          <div class="card-action">
-            <a href="usecases.html">Learn more about use cases.</a>
-          </div>
-        </div>
-      </div>
-       <div class="container" id="contact">
-      <div class="row">
-        <div class="col s12 center">
-          <hr>
-          <a class="btn tooltipped indigo darken-2" data-position="top" data-delay="50" data-tooltip="connor.fehrenbach@snc.edu">Email</a>
-        </div>
-         </div>
-
-      </div>
-      <!-- Scripts -->
-      <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-      <script  src="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/77bf246399356de08202338101915e2a25f89002/index.js"></script>
+	<!-- Fixed Navbar -->
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper indigo darken-2">
+				<a class="brand-logo center roboto" id="upperlogo">NFC</a>
+				<ul class="right hide-on-med-and-down roboto" id="nav-mobile">
+					<li>
+						<a class="smoothScroll" href="signaltypes.html" id="navbarlinks">Signals</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="history.html" id="navbarlinks">History</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="usecases.html" id="navbarlinks">Uses</a>
+					</li>
+				</ul>
+				<ul class="side-nav" id="slide-out">
+					<li>
+						<a class="smoothScroll" href="signaltypes.html">Signals</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="history.html">History</a>
+					</li>
+					<li>
+						<a class="smoothScroll" href="usecases.html">Uses</a>
+					</li>
+				</ul><a class="button-collapse" data-activates="slide-out" href="#"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+	</div>
+	<div class="container">
+		<!-- Page Content goes here -->
+		<div class="row">
+			<div class="col l8 m12 s12 offset-l2">
+				<div class="card" id="maincard">
+					<div class="card-image">
+						<img src="https://i.ytimg.com/vi/kc2MM8z6X7k/maxresdefault.jpg"> <span class="card-title"></span>
+					</div>
+					<div class="card-content">
+						<p>NFC, or near-field communication, enables short range communication between compatible devices. This requires at least one transmitting device, and another to receive the signal. A range of devices can use the NFC standard, with the most common applications being in smartphones and payment systems.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container about" id="intro">
+		<hr>
+		<div class="row">
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">How it Works</span>
+						<p>Using magnetic induction, a reader emits a small electric current which creates a magnetic field that in turn bridges the physical space between two devices. That field is received by a similar coil in the client device where it is turned back into electrical impulses to communicate data such as a credit card number or other such data.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Passive vs. Active</span>
+						<p>‘Passive’ NFC tags use the energy from the reader to encode their response, while ‘active’ tags have their own power source and respond to the reader using their own electromagnetic fields. You will find 'passive' style NFC in devices such as Bluetooth speakers, with 'active' style NFC being found in devices such as smartphones.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Security</span>
+						<p>When it comes to more sensitive data such as credit card numbers or passwords, some form encryption whether open-source or proprietary is to be expected on any NFC enabled payment system. Even then, an individual attempting to steal such credentials would need to be in very close proximity to do so.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container" id="types">
+		<div class="row">
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Signaling Types</span>
+						<p>There are three major classifications of NFC communication, NFC-A, NFC-B and NFC-F.</p>
+					</div>
+					<div class="card-action">
+						<a href="signaltypes.html">Learn more about signaling types.</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">History</span>
+						<p>NFC can be viewed as the successor to RFID, a technology patented in 1983.</p>
+					</div>
+					<div class="card-action">
+						<a href="history.html">Learn more about NFC history.</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4 l4">
+				<div class="card indigo darken-2">
+					<div class="card-content white-text">
+						<span class="card-title">Use Cases</span>
+						<p>NFC technology is used in everything from Bluetooth speakers to automobiles.</p>
+					</div>
+					<div class="card-action">
+						<a href="usecases.html">Learn more about use cases.</a>
+					</div>
+				</div>
+			</div>
+			<div class="container" id="contact">
+				<div class="row">
+					<div class="col s12 center">
+						<hr>
+						<a class="btn tooltipped indigo darken-2" data-delay="50" data-position="top" data-tooltip="connor.fehrenbach@snc.edu">Email</a>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div><!-- Scripts -->
+	<script src="//code.jquery.com/jquery-2.2.1.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js">
+	</script> 
+	<script src="https://rawcdn.githack.com/SNCNFC2018/SNCNFC2018.github.io/77bf246399356de08202338101915e2a25f89002/index.js">
+	</script>
 </body>
 </html>
